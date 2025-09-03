@@ -3,6 +3,7 @@ import { Navigate } from "react-router-dom";
 import { useAuthStore } from "../store/authStor";
 import { Navbar } from "../components/layout/Navbar";
 import { Users, CalendarCheck, Heart } from "lucide-react";
+import Footer from "../components/layout/Footer";
 
 export default function Index() {
   const user = useAuthStore((state) => state.user);
@@ -87,8 +88,8 @@ export default function Index() {
           Get Started
         </a>
       </section>
-
-    
+ 
+        <Footer />         
     </div>
   );
 }
