@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Medical Healthcare Design System - Professional & Calming */
+
+@layer base {
+  :root {
+    /* Core Background Colors */
+    --background: 210 10% 98%;
+    --foreground: 215 25% 12%;
+
+    /* Card & Surface Colors */
+    --card: 210 8% 99%;
+    --card-foreground: 215 25% 12%;
+
+    /* Popover Colors */
+    --popover: 210 8% 99%;
+    --popover-foreground: 215 25% 12%;
+
+    /* Primary Medical Blue */
+    --primary: 205 94% 34%;
+    --primary-foreground: 210 20% 98%;
+    --primary-light: 205 85% 60%;
+    --primary-dark: 205 100% 26%;
+
+    /* Secondary Accent Green */
+    --secondary: 146 53% 56%;
+    --secondary-foreground: 210 20% 98%;
+    --secondary-light: 146 45% 75%;
+    --secondary-dark: 146 65% 42%;
+
+    /* Muted Colors */
+    --muted: 210 15% 96%;
+    --muted-foreground: 215 20% 45%;
+
+    /* Accent Colors */
+    --accent: 205 85% 95%;
+    --accent-foreground: 205 94% 34%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 210 20% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 215 25% 12%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    /* Border & Input */
+    --border: 214 25% 88%;
+    --input: 214 25% 90%;
+    --ring: 205 94% 34%;
+
+    /* Medical Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(205 94% 34%), hsl(205 85% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(146 53% 56%), hsl(146 45% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(205 94% 34%) 0%, hsl(146 53% 56%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(210 8% 99%) 0%, hsl(210 15% 96%) 100%);
+
+    /* Medical Shadows */
+    --shadow-medical: 0 4px 20px -2px hsl(205 94% 34% / 0.08);
+    --shadow-card: 0 2px 12px -4px hsl(215 25% 12% / 0.08);
+    --shadow-hover: 0 8px 30px -6px hsl(205 94% 34% / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode Medical Theme */
+    --background: 215 28% 7%;
+    --foreground: 210 15% 92%;
+
+    --card: 215 25% 9%;
+    --card-foreground: 210 15% 92%;
+
+    --popover: 215 25% 9%;
+    --popover-foreground: 210 15% 92%;
+
+    --primary: 205 85% 60%;
+    --primary-foreground: 215 28% 7%;
+    --primary-light: 205 75% 75%;
+    --primary-dark: 205 94% 34%;
+
+    --secondary: 146 45% 65%;
+    --secondary-foreground: 215 28% 7%;
+    --secondary-light: 146 35% 80%;
+    --secondary-dark: 146 53% 56%;
+
+    --muted: 215 25% 12%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 215 25% 12%;
+    --accent-foreground: 205 85% 60%;
+
+    --success: 142 65% 45%;
+    --success-foreground: 210 15% 92%;
+    --warning: 38 85% 55%;
+    --warning-foreground: 215 28% 7%;
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 210 15% 92%;
+
+    --border: 215 25% 15%;
+    --input: 215 25% 15%;
+    --ring: 205 85% 60%;
+
+    /* Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(205 85% 60%), hsl(205 75% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(146 45% 65%), hsl(146 35% 80%));
+    --gradient-hero: linear-gradient(135deg, hsl(205 85% 60%) 0%, hsl(146 45% 65%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(215 25% 9%) 0%, hsl(215 25% 12%) 100%);
+
+    --shadow-medical: 0 4px 20px -2px hsl(205 85% 60% / 0.12);
+    --shadow-card: 0 2px 12px -4px hsl(0 0% 0% / 0.25);
+    --shadow-hover: 0 8px 30px -6px hsl(205 85% 60% / 0.20);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
